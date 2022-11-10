@@ -9,6 +9,7 @@ Notify.init({
   });
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
+
 const refs = {
 input : document.querySelector("#datetime-picker"),
 startBtn : document.querySelector("[data-start]"),
@@ -19,7 +20,6 @@ seconds : document.querySelector("[data-seconds]"),
 }
 refs.startBtn.disabled = true;
 refs.input.addEventListener("input", () => {refs.startBtn.disabled = false;})
-console.log("hger11111t");
 
 let selectedDate = null;
 flatpickr(refs.input, {
