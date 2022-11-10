@@ -6,6 +6,7 @@ Notify.init({
     cssAnimationDuration: 2000,
     opacity: 1,
   });
+  
 const formEl = document.querySelector('.form');
 formEl.addEventListener('submit', onFormSubmit);
 
